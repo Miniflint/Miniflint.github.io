@@ -1,10 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Page Title</title>
-    </head>
-    <body>
-    <h1>This is a Heading</h1>
-        <p>This is a paragraph.</p>
-    </body>
-</html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Barres Verticales avec Menus Déroulants</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bar" onclick="toggleMenu(0)">
+            <span class="icon">+</span>
+            <span>Barre 1</span>
+            <div class="menu">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+        <div class="bar" onclick="toggleMenu(1)">
+            <span class="icon">+</span>
+            <span>Barre 2</span>
+            <div class="menu">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+        <div class="bar" onclick="toggleMenu(2)">
+            <span class="icon">+</span>
+            <span>Barre 3</span>
+            <div class="menu">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+        <div class="bar" onclick="toggleMenu(3)">
+            <span class="icon">+</span>
+            <span>Barre 4</span>
+            <div class="menu">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
