@@ -44,8 +44,12 @@ body {
     transition: all 0.3s;
 }
 
+:root {
+    --translate-x: 1200px; /* Default value */
+}
+
 .bar.expanded ~ .bar {
-    transform: translateX(1200px); /* Adjust the width of the menu here */
+    transform: translateX(var(--translate-x)); /* Adjust the width of the menu here */
 }
 
 

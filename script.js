@@ -15,7 +15,8 @@ function toggleMenu(index) {
         menu.style.display = 'block';
         bars[index].classList.add('expanded');
         width = document.body.offsetWidth;
-        console.log(bars[index])
+        console.log(bars)
+        document.documentElement.style.setProperty('--translate-x', (width - 400) + "px"); // Adjust the width of the menu here
     }
 }
 
