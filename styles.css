@@ -22,13 +22,17 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 100px;
+    width: 75px;
     background-color: #4CAF50;
     color: white;
     cursor: pointer;
     position: relative;
     transition: all 0.3s;
     flex-shrink: 0;
+}
+
+:root {
+    --translate-x: 1200px; /* Default value */
 }
 
 .menu {
@@ -39,19 +43,16 @@ body {
     background-color: #ffffff;
     border: 1px solid #ccc;
     height: 100%;
+    width: calc(var(--translate-x) - 20%);
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
 }
 
-:root {
-    --translate-x: 1200px; /* Default value */
-}
 
 .bar.expanded ~ .bar {
     transform: translateX(var(--translate-x)); /* Adjust the width of the menu here */
 }
-
 
 .bar span {
     padding: 10px;
